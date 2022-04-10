@@ -1,0 +1,67 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "About this site",
+      "description": "Material para repasar los perfiles de logD de drogas, las métricas de QSAR (R2 y RSME) y los métodos como MLR y PLS vistos en clase.",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2022-04-10T16:40:13-06:00"
+    },
+    {
+      "path": "AMPs_data.html",
+      "title": "Tabla de Péptidos Antimicrobianos",
+      "description": "Se encuentra el nombre de diversos péptidos antimicrobianos, el \"endpoint\" corresponde a lysis, representando el % de desintegración de los eritrocitos\n",
+      "author": [
+        {
+          "name": "Dra. Silvana De Souza Pinheiro",
+          "url": {}
+        },
+        {
+          "name": "Dr. William J. Zamora R.",
+          "url": {}
+        },
+        {
+          "name": "",
+          "url": {}
+        }
+      ],
+      "date": "`r Sys.Date()`",
+      "contents": "\n\n\n\n{\"columns\":[{\"label\":[\"peptide\"],\"name\":[1],\"type\":[\"chr\"],\"align\":[\"left\"]},{\"label\":[\"lysis\"],\"name\":[2],\"type\":[\"int\"],\"align\":[\"right\"]},{\"label\":[\"charge\"],\"name\":[3],\"type\":[\"int\"],\"align\":[\"right\"]},{\"label\":[\"logD\"],\"name\":[4],\"type\":[\"dbl\"],\"align\":[\"right\"]},{\"label\":[\"amphipathicity\"],\"name\":[5],\"type\":[\"dbl\"],\"align\":[\"right\"]}],\"data\":[{\"1\":\"cyclo(RRWWRF)\",\"2\":\"24\",\"3\":\"3\",\"4\":\"-8.31\",\"5\":\"14.0\"},{\"1\":\"cyclo(RRYYRF)\",\"2\":\"1\",\"3\":\"3\",\"4\":\"-11.01\",\"5\":\"9.5\"},{\"1\":\"cyclo(KKWWKF)\",\"2\":\"10\",\"3\":\"3\",\"4\":\"-4.01\",\"5\":\"10.7\"},{\"1\":\"cyclo(RRNaphNaphRF)\",\"2\":\"30\",\"3\":\"3\",\"4\":\"-4.29\",\"5\":\"14.8\"},{\"1\":\"indolicidin\",\"2\":\"60\",\"3\":\"4\",\"4\":\"-6.89\",\"5\":\"18.3\"},{\"1\":\"maculatin 1.1\",\"2\":\"84\",\"3\":\"1\",\"4\":\"11.30\",\"5\":\"24.7\"},{\"1\":\"maculatin P15A\",\"2\":\"21\",\"3\":\"1\",\"4\":\"5.40\",\"5\":\"12.9\"},{\"1\":\"caerin 1.1\",\"2\":\"100\",\"3\":\"1\",\"4\":\"4.10\",\"5\":\"25.3\"},{\"1\":\"citropin 1.1\",\"2\":\"32\",\"3\":\"2\",\"4\":\"15.80\",\"5\":\"13.2\"},{\"1\":\"aurein 1.2\",\"2\":\"7\",\"3\":\"1\",\"4\":\"9.40\",\"5\":\"8.9\"},{\"1\":\"cyclo(RRWWRF)\",\"2\":\"24\",\"3\":\"3\",\"4\":\"-8.82\",\"5\":\"8.3\"},{\"1\":\"IsCT\",\"2\":\"80\",\"3\":\"2\",\"4\":\"5.55\",\"5\":\"14.4\"},{\"1\":\"IsCT_E7K\",\"2\":\"53\",\"3\":\"4\",\"4\":\"2.30\",\"5\":\"11.9\"},{\"1\":\"IsCT_W6A\",\"2\":\"0\",\"3\":\"2\",\"4\":\"-4.14\",\"5\":\"5.3\"},{\"1\":\"indolicidin\",\"2\":\"60\",\"3\":\"4\",\"4\":\"-3.86\",\"5\":\"16.2\"}],\"options\":{\"columns\":{\"min\":{},\"max\":[10]},\"rows\":{\"min\":[15],\"max\":[15]},\"pages\":{}}}\n  \n\n\n\n\n",
+      "last_modified": "2022-04-10T16:40:14-06:00"
+    },
+    {
+      "path": "Corplot.html",
+      "title": "Gráfica de Correlación entre todos los descriptores y el endpoint",
+      "description": "Las correlaciones son hechas con el coeficiente de correlación (r), por lo tanto entre más cercano a -1 o 1 mayor la correlación entre los datos.\n",
+      "author": [],
+      "contents": "\n\n\n\n\n\n\n",
+      "last_modified": "2022-04-10T16:40:16-06:00"
+    },
+    {
+      "path": "index.html",
+      "title": "QSAR",
+      "description": "QSAR - Ejemplos prácticos de las clases\n",
+      "author": [],
+      "contents": "\n\n\n\n\n",
+      "last_modified": "2022-04-10T16:40:16-06:00"
+    },
+    {
+      "path": "logD.html",
+      "title": "Perfiles de logD de drogas",
+      "description": "Se muestra la tabla vista en la clase, así como los perfiles de lipofilicidad para el ibuprofeno y la amitriptilina.\n",
+      "author": [],
+      "contents": "\nTabla con los valores de propiedades fisicoquímicas para el cálculo\ndel logD\n\nPerfil de logD para el Ibuprofeno\n\nPerfil de logD para la amitriptilina\n\n\n\n\n",
+      "last_modified": "2022-04-10T16:40:16-06:00"
+    },
+    {
+      "path": "Modelos_MLR.html",
+      "title": "Modelos de Regresión Lineal Múltiple",
+      "description": "Modelo 1: % Lisis en función de la Carga, logD y anfipaticidad (Azul)\n\nModelo 2: % Lisis en función del logD y anfipaticidad (Rojo)\n\nModelo 3: % Lisis en función de la Carga y anfipaticidad (Verde)\n\nModelo 4: % Lisis en función de la anfipaticidad (Negro)\n\nSe muestran los gráficos de cada modelo en función de:\n  \n1.El coeficiente de determinacion (R2)\n\n2.El root-mean-square-deviation (RSMD)\n^[Se debe considerar que el error experimental del % de lisis es aproxidamente +/- 12 % ].\n\n¿Cuál modelo se usaría para el QSAR?\n",
+      "author": [],
+      "contents": "\n\n\n\n\nSe debe considerar que el error\nexperimental del % de lisis es aproxidamente +/- 12 % ↩︎\n",
+      "last_modified": "2022-04-10T16:40:17-06:00"
+    }
+  ],
+  "collections": []
+}

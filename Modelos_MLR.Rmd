@@ -1,0 +1,82 @@
+---
+title: "Modelos de Regresión Lineal Múltiple"
+description: |
+  Modelo 1: % Lisis en función de la Carga, logD y anfipaticidad (Azul)
+  
+  Modelo 2: % Lisis en función del logD y anfipaticidad (Rojo)
+  
+  Modelo 3: % Lisis en función de la Carga y anfipaticidad (Verde)
+  
+  Modelo 4: % Lisis en función de la anfipaticidad (Negro)
+  
+  Se muestran los gráficos de cada modelo en función de:
+    
+  1.El coeficiente de determinacion (R2)
+
+  2.El root-mean-square-deviation (RSMD)
+  ^[Se debe considerar que el error experimental del % de lisis es aproxidamente +/- 12 % ].
+  
+  ¿Cuál modelo se usaría para el QSAR?
+  
+output: distill::distill_article
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r, layout="l-body-outset"}
+data=read.csv("qsar_example.csv")
+library(Metrics)
+#Model1
+model1 <- lm(lysis ~ charge+logD+amphipathicity, data = data)
+#summary(model1)
+s1=summary(model1)
+#Model2
+model2 <- lm(lysis ~ logD+amphipathicity, data = data)
+#summary(model2)
+s2=summary(model2)
+#Model3
+model3 <- lm(lysis ~ charge+amphipathicity, data = data)
+#summary(model3)
+s3=summary(model3)
+#Model4
+model4 <- lm(lysis ~ amphipathicity, data = data)
+#summary(model4)
+s4=summary(model4)
+
+rs=c(s1$r.squared,s2$r.squared,s3$r.squared,s4$r.squared)
+
+plot(c(1:4),rs,pch=19,cex=1.8,col=c("blue","red","green","black"),xlab="model",ylab="R2"
+,xaxt="n",ylim=c(0.6,0.9))
+axis(1, at=c(1,2,3,4),labels=c("1","2","3","4"),las=1)
+
+#rsme
+p1=predict(model1)
+p2=predict(model2)
+p3=predict(model3)
+p4=predict(model4)
+
+data$p1=round(p1,1)
+data$p2=round(p2,1)
+data$p3=round(p3,1)
+data$p4=round(p4,1)
+
+rsmd<-NULL
+for (i in c(6:9)) {
+y=data[,2]
+a<-round(rmse(data[,i],y),3)
+rsmd<-append(rsmd,a)
+}
+#rsmd
+
+plot(c(1:4),rsmd,pch=19,cex=1.8,col=c("blue","red","green","black"),xlab="model",ylab="RMSD"
+,xaxt="n",ylim=c(12,18))
+axis(1, at=c(1,2,3,4),labels=c("1","2","3","4"),las=1)
+
+```
+
+
+
+
+
+

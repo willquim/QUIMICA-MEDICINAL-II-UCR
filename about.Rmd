@@ -1,0 +1,10 @@
+---
+title: "About this site"
+description: |
+  Material para repasar los perfiles de logD de drogas, las métricas de QSAR (R2 y RSME) y los métodos como MLR y PLS vistos en clase.
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+

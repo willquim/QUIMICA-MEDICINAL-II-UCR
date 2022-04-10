@@ -1,0 +1,26 @@
+---
+title: "Gráfica de Correlación entre todos los descriptores y el endpoint"
+description: |
+  Las correlaciones son hechas con el coeficiente de correlación (r), por lo tanto entre más cercano a -1 o 1 mayor la correlación entre los datos.
+
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r, layout="l-body-outset"}
+library(corrplot)
+data=read.csv("qsar_example.csv")
+mcor=cor(data[,c(2:5)])
+corrplot(mcor, type = "upper", order = "hclust",tl.col = "black", 
+addCoef.col = "black",cl.cex=0.5,tl.srt = 45,tl.cex=0.5)
+```
+
+
+
+
+
+
+

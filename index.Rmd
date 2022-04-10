@@ -1,0 +1,17 @@
+---
+title: "QSAR"
+description: |
+   QSAR - Ejemplos prácticos de las clases
+site: distill::distill_website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+# Learn more about creating websites with Distill at:
+# https://rstudio.github.io/distill/website.html
+
+```
+
+![](IMG_1.png){width=400}
+
