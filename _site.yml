@@ -6,7 +6,7 @@ output_dir: "_site"
 navbar:
   logo:
     image: cb.png
-    href: https://github.com/willquim/QUIMICA-MEDICINAL-II-UCR
+    href:  cb.png
   right:
     - text: "Home"
       href: index.html
