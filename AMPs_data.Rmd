@@ -2,13 +2,7 @@
 title: "Tabla de Péptidos Antimicrobianos"
 description: |
   Se encuentra el nombre de diversos péptidos antimicrobianos, el "endpoint" corresponde a lysis, representando el % de desintegración de los eritrocitos
-author:
-  - name: Dra. Silvana De Souza Pinheiro 
-    affiliation: Facultad de Farmacia, Universidad de Costa Rica
-  - name: Dr. William J. Zamora R. 
-    affiliation: Escuela de Química & Facultad de Farmacia, Universidad de Costa Rica. 
-  - name: "" 
-    affiliation: Laboratorio de Computación Avanzada, CNCA-CENAT. 
+
 date: "`r Sys.Date()`"
 output: distill::distill_article
 ---

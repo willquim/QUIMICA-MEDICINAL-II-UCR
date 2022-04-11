@@ -1,7 +1,17 @@
 ---
 title: "QSAR"
 description: |
-   QSAR - Ejemplos prácticos de las clases
+   Estudios cuantitativos relación estructura–actividad-propiedad (QSAR)
+author:
+  - name: Dra. Silvana De Souza Pinheiro 
+    affiliation: Laboratorio CBio3, Facultad de Farmacia, Universidad de Costa Rica
+  - name: Dr. William J. Zamora R. 
+    affiliation: Laboratorio CBio3, Escuela de Química & Facultad de Farmacia, Universidad de Costa Rica. 
+  - name: "" 
+    affiliation: Laboratorio de Computación Avanzada, CNCA-CENAT. 
+date: "`r Sys.Date()`"
+   
+   
 site: distill::distill_website
 ---
 
@@ -13,5 +23,8 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ```
 
-![](IMG_1.png){width=400}
+![](portada1.png){weight=600} 
+![](portada2.png){weight=600} 
+
+
 
